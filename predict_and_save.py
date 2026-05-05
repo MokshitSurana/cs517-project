@@ -6,8 +6,8 @@ from pathlib import Path
 from datasets import Dataset
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, Trainer
 
-MODEL_DIR = "models/erm"
-OUT_DIR = Path("outputs/erm")
+MODEL_DIR = "models/reweighted_erm"  # <-- changed
+OUT_DIR = Path("outputs/reweighted_erm")
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 model_name = "distilbert-base-uncased"

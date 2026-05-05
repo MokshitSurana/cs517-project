@@ -2,7 +2,7 @@ import numpy as np
 import pyarrow.parquet as pq
 from sklearn.metrics import roc_auc_score
 
-PRED_PATH = "outputs/erm/val_preds.parquet"
+PRED_PATH = "outputs/groupdro/val_preds.parquet"
 THRESH = 0.5  # for error-rate parity style metrics
 
 df = pq.read_table(PRED_PATH).to_pandas()
